@@ -54,7 +54,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://godbear329.github.io/images/avatar.png?v=1596800882622" class="avatar">
+            <img src="https://godbear329.github.io/images/avatar.png?v=1596801382062" class="avatar">
         </div>
         <div class="sitename">琢钰</div>
         <span class="describtion" data-text='["玉不琢，不成器。人不学，不知义。"]'>&nbsp;</span>
@@ -406,7 +406,66 @@
         <div name="comment" style="background: white">
             <div class="commentcontainer">
                 
-                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                <head>
+    <script src='https://godbear329.github.io/media/js/valine.min.js'></script>
+    <script src="https://godbear329.github.io/media/js/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</head>
+<style>
+    @media screen and (min-width: 1300px) {
+        .v .vbtn .vsubmit {
+            border-radius: 0;
+            padding: 0;
+            color: #fff;
+            line-height: 44px;
+            width: 100%;
+            border: none;
+            background: #595485;
+        }
+
+        .v .vwrap .vedit .vctrl span.vpreview-btn,
+        .v .vwrap .vcontrol .col.col-20,
+        .v .vlist .vcard .vhead .vsys {
+            display: none;
+        }
+
+        .v .vwrap .vmark .valert {
+            padding-top: 0px;
+        }
+
+        .vtext {
+            padding: 0;
+        }
+    }
+</style>
+
+<body>
+    <div id="vcomments">
+    </div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'wU0NLeMtqhN6zVmjOw2RN75b-gzGzoHsz',
+            appKey: '14pMv6oFRXwkooizmmK5SBXg',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 10,
+            placeholder: '既然来了，何不畅所欲言呢？',
+            visitor: true // 阅读量统计
+        })
+    </script>
+</body>
+
+
+<script type="text/javascript">
+    jinrishici.load(function (result) {
+        var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+            .dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+    });
+</script>
+                <div class="clear"></div>
                 
             </div>
         </div>
@@ -626,7 +685,167 @@
     <div name="comment" style="background: white;margin-top:100px">
         <div class="commentcontainer">
             
-            <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+            <head>
+    <script src='https://godbear329.github.io/media/js/valine.min.js'></script>
+    <script src="https://godbear329.github.io/media/js/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+</head>
+<style>
+    @media screen and (min-width: 1300px) {
+        .v {
+            margin-top: 10%;
+        }
+
+        .v .vwrap {
+            overflow: hidden;
+        }
+
+        .v .vwrap {
+            padding: 0 0 44px;
+        }
+
+        .v .veditor {
+            resize: none;
+        }
+
+        .veditor::placeholder {
+            color: #b3b3b3;
+            font-size: 18px;
+            text-align: center;
+            line-height: 3rem;
+            font-family: kaiti;
+        }
+
+        .v .vwrap .vedit {
+            padding-top: 0
+        }
+
+        .v .vwrap .vheader {
+            width: 80%;
+            bottom: 0;
+            position: absolute;
+            background: #f7f7f7;
+        }
+
+        .v .vinput {
+            padding: 10px 15px;
+        }
+
+        .v .vwrap .vheader .vinput {
+            border-bottom: 0px
+        }
+
+        .v .vwrap .vedit .vctrl {
+            margin-top: -44px;
+            right: 0;
+            position: absolute;
+            margin-right: -3px;
+        }
+
+        .v .vwrap .vcontrol {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 20%;
+            padding-top: 0px;
+        }
+    }
+
+    .v .vwrap .vcontrol .col.col-80 {
+        width: 100%;
+    }
+
+    .v .vbtn.vsubmit {
+        border-radius: 0;
+        padding: 0;
+        color: #fff;
+        line-height: 44px;
+        width: 100%;
+        border: none;
+        background: #595485;
+    }
+
+    .v .vwrap .vedit .vctrl span.vpreview-btn,
+    .v .vwrap .vcontrol .col.col-20,
+    .v .vlist .vcard .vhead .vsys {
+        display: none;
+    }
+
+    .v .vwrap .vmark .valert {
+        padding-top: 0px;
+    }
+
+    .vtext {
+        padding: 0;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .v .vwrap .vmark .valert {
+            margin-top: 60%;
+        }
+
+        .vwrap {
+            margin: 15px;
+            width: 100%;
+        }
+
+        .v .vwrap .vheader .vinput {
+            padding: 10px 5px;
+        }
+
+        .v .vwrap {
+            overflow: auto;
+        }
+
+        .v .veditor {
+            min-height: 30rem;
+            resize: none;
+        }
+
+        .v .vinput {
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+
+        .v .vwrap .vedit .vctrl {
+            right: 0;
+        }
+
+        .v .vempty {
+            padding: 1.25em;
+            text-align: center;
+            color: #999;
+            font-size: 25px;
+        }
+
+    }
+</style>
+
+<body>
+    <div id="vcomments1"></div>
+    <script>
+        new Valine({
+            el: '#vcomments1',
+            appId: 'wU0NLeMtqhN6zVmjOw2RN75b-gzGzoHsz',
+            appKey: '14pMv6oFRXwkooizmmK5SBXg',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 10,
+            placeholder: '既然来了，那就留个痕迹吧~',
+            visitor: true // 阅读量统计
+        })
+    </script>
+</body>
+
+<script type="text/javascript">
+    jinrishici.load(function (result) {
+        var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+            .dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+    });
+</script>
+            <div class="clear"></div>
             
         </div>
     </div>
